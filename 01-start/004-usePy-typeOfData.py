@@ -96,7 +96,33 @@ language.pop(0)
 print('删除列表 pop(index) 删除指定索引的元素', language)
 # 删除列表自身 del
 del language
-if language:
-    print(language)  # name 'language' is not defined
-else:
-    print('删除language列表成功')
+# if language:
+#     print(language)  # name 'language' is not defined
+# else:
+#     print('删除language列表成功')
+
+# 元组Tuple()
+
+# 什么是元组？
+# 元组与列表类似,但是元组不可变
+#
+# 为什么有了列表还需要元组?
+# 因为元组不可变,所以代码更安全。如果可能,能用元组代替列表就尽量用元祖
+tuple1 = (1, 2, 3, 4, 5)
+print('元组', tuple1)
+# 元组中包含元组
+print('元组中包含元组', (1, 2, (3, 4)))
+# 元组中包含列表
+print('元组中包含列表', (1, 2, 3, 4, [1, 2, 3]))
+
+# 注意,元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用
+print((1))
+print((1,))
+
+# 因为元组不可变,所以不能 '添加'、'修改'、'删除' 元组内的元素
+# 但是可以删除整个元组
+# del tuple1
+# print(tuple1)NameError: name 'tuple1' is not defined
+
+print(tuple1)
+
